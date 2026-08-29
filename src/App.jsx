@@ -8,6 +8,7 @@ import ObjectValues from "./components/ObjectValue"
 import ArrayValues from "./components/ArrayValues"
 import ProductArray from "./components/props/productArray"
 import PropsWithClass from "./components/props/PropsWithClass"
+import MainComponent from "./components/learnComponent/MainComponent"
 
 class App extends React.Component {
    productDetails = [
@@ -19,6 +20,10 @@ class App extends React.Component {
   render(){
     return(
       <>
+       {/* Component start  */}
+      <MainComponent></MainComponent>
+
+      
       <ProductArray productDetails={this.productDetails}></ProductArray>
       <PropsWithClass name="ravi" age={21}></PropsWithClass>
 
