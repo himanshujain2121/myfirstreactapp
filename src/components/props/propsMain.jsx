@@ -1,5 +1,6 @@
 import ClassBasedProps from "./ClassBasedProps";
 import FunctionBasedProps from "./FunctionBasedProps";
+import PropsWithFunction from "./PropsWithFunction";
 
 function PropsMain() {
   let productDetails = [
@@ -19,10 +20,14 @@ function PropsMain() {
 
       {/* Class Based props */}
       <ClassBasedProps name={"Himanshu"} age={35}></ClassBasedProps>
-      
+
+      let names = ["ravi"];
+
+      <PropsWithFunction name={"Navisha"} productDetails= {productDetails}></PropsWithFunction>
+
 
       {/* function based props with array based props*/}
-      <FunctionBasedProps name={"Navisha"} age={10} productDetails= {productDetails}></FunctionBasedProps>
+      {/* <FunctionBasedProps name={"Navisha"} age={10} productDetails= {productDetails}></FunctionBasedProps> */}
 
       {/* Function can also be passed as Props */}
 
