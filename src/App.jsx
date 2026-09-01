@@ -8,6 +8,7 @@ import StateInClass from "./components/StateInClass";
 import Movie from "./components/movie";
 import Food from "./components/food";
 import StateInClassWithComponent from "./components/StateInClassWithComponent";
+import Practice from "./components/practice/Practice";
 
 
 
@@ -34,7 +35,7 @@ class App extends React.Component {
         {/* props */}
         {/* <PropsMain></PropsMain> */}
 
-        <FunctionCallProps demo={demo}></FunctionCallProps>
+        {/* <FunctionCallProps demo={demo}></FunctionCallProps> */}
 
 
       {/* <Movie  ></Movie>
@@ -44,9 +45,11 @@ class App extends React.Component {
 
       {/* <MovieCart  moviearr={moviearr} foodarr={foodarr}></MovieCart> */}
 
-      <StateInClass></StateInClass>
+      {/* <StateInClass></StateInClass>
 
-      <StateInClassWithComponent></StateInClassWithComponent>
+      <StateInClassWithComponent></StateInClassWithComponent> */}
+
+      <Practice></Practice>
 
       </>
     );
