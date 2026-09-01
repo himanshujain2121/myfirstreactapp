@@ -4,41 +4,20 @@ import ObjectMain from "./components/learnObjects/ObjectMain";
 import PropsMain from "./components/props/propsMain";
 import FunctionCallProps from "./components/functionCallProps";
 
+import StateInClass from "./components/StateInClass";
+import Movie from "./components/movie";
+import Food from "./components/food";
+import StateInClassWithComponent from "./components/StateInClassWithComponent";
+
 
 
 class App extends React.Component {
 
 
   render() {
-    let moviearr = [
-      {
-        name:"kranti",
-        price:200
-      },
-      {
-        name:"demo",
-        price:100
-      },
-      {
-        name:"run",
-        price:300
-      }
-    ]
+   
 
-    let foodarr = [
-      {
-        name:"samosa",
-        price:50
-      },
-      {
-        name:"water",
-        price:30
-      },
-      {
-        name:"popcorn",
-        price:300
-      }
-    ]
+
 
     let demo = ()=> {
       return <p>I am a demo function</p>
@@ -58,12 +37,16 @@ class App extends React.Component {
         <FunctionCallProps demo={demo}></FunctionCallProps>
 
 
-      {/* <Movie moviearr={moviearr}></Movie>
+      {/* <Movie  ></Movie>
 
-      <Food foodarr={foodarr}></Food> */}
+      <Food ></Food> */}
 
 
       {/* <MovieCart  moviearr={moviearr} foodarr={foodarr}></MovieCart> */}
+
+      <StateInClass></StateInClass>
+
+      <StateInClassWithComponent></StateInClassWithComponent>
 
       </>
     );

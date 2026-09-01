@@ -1,11 +1,26 @@
-function Food({foodarr}){
-    console.log(foodarr)
-    return(
-        <>
-        <h1>Food</h1>
-        <MovieCart foodarr={foodarr}></MovieCart>
-       
-        {/* {foodarr.map((val, index) => {
+import MovieCart from "./movieCart";
+
+function Food() {
+  let foodarr = [
+    {
+      name: "samosa",
+      price: 50,
+    },
+    {
+      name: "water",
+      price: 30,
+    },
+    {
+      name: "popcorn",
+      price: 300,
+    },
+  ];
+  return (
+    <>
+      <h1>Food</h1>
+      <MovieCart data={foodarr}></MovieCart>
+
+      {/* {foodarr.map((val, index) => {
         return (
           <>
             <h2 key={index}>{val.name}</h2>
@@ -13,9 +28,8 @@ function Food({foodarr}){
           </>
         );
       })} */}
-
-        </>
-    )
+    </>
+  );
 }
 
-export default Food
+export default Food;
