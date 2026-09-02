@@ -6,6 +6,8 @@ import Pizza from "./Pizza";
 import Toppings from "./Toppings";
 import StateWithClass from "./StateWithClass";
 import StateWithClassComponent from "./StateWithClassComponent";
+import StateWithFunctionHooks from "./StateWithFunctionHooks";
+import StateWithFunctionHooksComponent from "./StateWithFunctionHooksComponent";
 
 export default class Practice extends Component {
 
@@ -35,6 +37,7 @@ export default class Practice extends Component {
   render() {
     return (
       <>
+{/*       
         <PropsWithClass employee={this.employee} hr={this.hr}></PropsWithClass>
         <p>-------------------</p>
 
@@ -47,9 +50,14 @@ export default class Practice extends Component {
         <Pizza></Pizza>
         <Toppings></Toppings>
 
-        <p>*************** state *****************</p>
+        <p>*************** state with class*****************</p>
         <StateWithClass></StateWithClass>
-        <StateWithClassComponent></StateWithClassComponent>
+        <StateWithClassComponent></StateWithClassComponent> */}
+
+        <p>*************** state with function with the help of hooks *****************</p>
+        <StateWithFunctionHooks></StateWithFunctionHooks>
+
+        <StateWithFunctionHooksComponent></StateWithFunctionHooksComponent>
       </>
     );
   }
