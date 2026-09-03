@@ -11,6 +11,8 @@ import StateInClassWithComponent from "./components/StateInClassWithComponent";
 import Practice from "./components/practice/Practice";
 import StateInFunction from "./components/StateInFunction";
 import StateWithFunctionComponentShow from "./components/StateWithFunctionComponentShow";
+import ConditionalRendering from "./components/learnComponent/ConditionalRendering";
+import ProductContainer from "./components/learnComponent/ProductContainer";
 
 
 
@@ -51,11 +53,15 @@ class App extends React.Component {
 
       {/* <StateInClassWithComponent></StateInClassWithComponent> */}
 
-      <Practice></Practice>
+      {/* <Practice></Practice> */}
 
         {/* <StateInFunction></StateInFunction>
 
         <StateWithFunctionComponentShow></StateWithFunctionComponentShow> */}
+
+        {/* <ConditionalRendering></ConditionalRendering> */}
+
+        <ProductContainer></ProductContainer>
       </>
     );
   }
