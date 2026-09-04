@@ -13,6 +13,7 @@ import StateInFunction from "./components/StateInFunction";
 import StateWithFunctionComponentShow from "./components/StateWithFunctionComponentShow";
 import ConditionalRendering from "./components/learnComponent/ConditionalRendering";
 import ProductContainer from "./components/learnComponent/ProductContainer";
+import NavbarContainer from "./components/NavbarContainer";
 
 
 
@@ -61,7 +62,9 @@ class App extends React.Component {
 
         {/* <ConditionalRendering></ConditionalRendering> */}
 
-        <ProductContainer></ProductContainer>
+        {/* <ProductContainer></ProductContainer> */}
+
+        <NavbarContainer></NavbarContainer>
       </>
     );
   }
