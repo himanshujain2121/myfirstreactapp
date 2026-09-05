@@ -14,6 +14,8 @@ import StateWithFunctionComponentShow from "./components/StateWithFunctionCompon
 import ConditionalRendering from "./components/learnComponent/ConditionalRendering";
 import ProductContainer from "./components/learnComponent/ProductContainer";
 import NavbarContainer from "./components/NavbarContainer";
+import Navbar from "./components/practice/meeshoNavbar/Navbar";
+import RefWithClass from "./components/RefWithClass";
 
 
 
@@ -64,7 +66,11 @@ class App extends React.Component {
 
         {/* <ProductContainer></ProductContainer> */}
 
-        <NavbarContainer></NavbarContainer>
+        {/* <NavbarContainer></NavbarContainer> */}
+        
+        {/* <Navbar></Navbar> */}
+
+        <RefWithClass></RefWithClass>
       </>
     );
   }
