@@ -1,7 +1,8 @@
 import React from 'react'
-import Increment from './Increment'
-import Decrement from './Decrement'
 import Reset from './Reset'
+import Increment from '../Increment'
+import Decrement from '../Decrement'
+
 
 const StateWithFunctionHooksComponent = () => {
 
@@ -23,9 +24,9 @@ const StateWithFunctionHooksComponent = () => {
    <>
     <div>  StateWithFunctionHooksComponent  </div>
     <h1>Count = {count}</h1>
-    <Increment inc= {inc}></Increment>
+    <Increment inc = {inc}></Increment>
     <Decrement dec = {dec}></Decrement>
-    <Reset reset={reset}></Reset>
+    <Reset reset = {reset}></Reset>
    </>
   )
 }

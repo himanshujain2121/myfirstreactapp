@@ -16,6 +16,9 @@ import ProductContainer from "./components/learnComponent/ProductContainer";
 import NavbarContainer from "./components/NavbarContainer";
 import Navbar from "./components/practice/meeshoNavbar/Navbar";
 import RefWithClass from "./components/RefWithClass";
+import Example from "./components/example/Example";
+import RefWithFunction from "./components/RefWithFunction";
+import RefWithMusic from "./components/RefWithMusic";
 
 
 
@@ -56,7 +59,9 @@ class App extends React.Component {
 
       {/* <StateInClassWithComponent></StateInClassWithComponent> */}
 
-      {/* <Practice></Practice> */}
+      <Practice></Practice>
+
+
 
         {/* <StateInFunction></StateInFunction>
 
@@ -70,7 +75,13 @@ class App extends React.Component {
         
         {/* <Navbar></Navbar> */}
 
-        <RefWithClass></RefWithClass>
+        {/* <RefWithClass></RefWithClass> */}
+
+        {/* <Example></Example> */}
+
+        {/* <RefWithFunction></RefWithFunction>*/}
+
+        <RefWithMusic></RefWithMusic> 
       </>
     );
   }

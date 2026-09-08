@@ -8,6 +8,8 @@ import StateWithClass from "./StateWithClass";
 import StateWithClassComponent from "./StateWithClassComponent";
 import StateWithFunctionHooks from "./StateWithFunctionHooks";
 import StateWithFunctionHooksComponent from "./StateWithFunctionHooksComponent";
+import UseRefWithInput from "../example/UseRefWithInput";
+import PlaySong from "./PlaySong";
 
 export default class Practice extends Component {
 
@@ -38,7 +40,7 @@ export default class Practice extends Component {
     return (
       <>
      
-        <PropsWithClass employee={this.employee} hr={this.hr}></PropsWithClass>
+        {/* <PropsWithClass employee={this.employee} hr={this.hr}></PropsWithClass>
         <p>-------------------</p>
 
         <PropsWithFunction employee={this.employee} hr={this.hr}></PropsWithFunction>
@@ -54,10 +56,14 @@ export default class Practice extends Component {
         <StateWithClass></StateWithClass>
         <StateWithClassComponent></StateWithClassComponent> 
 
-        <p>*************** state with function with the help of hooks *****************</p>
+        <p>*************** state with function with the help of useState hooks *****************</p>
         <StateWithFunctionHooks></StateWithFunctionHooks>
 
-        <StateWithFunctionHooksComponent></StateWithFunctionHooksComponent>
+        <StateWithFunctionHooksComponent></StateWithFunctionHooksComponent> 
+
+        <p>*************** state with function with the help of useref hooks *****************</p> */}
+        <UseRefWithInput></UseRefWithInput>
+        <PlaySong></PlaySong>
       </>
     );
   }

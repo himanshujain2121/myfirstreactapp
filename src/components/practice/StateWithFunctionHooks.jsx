@@ -13,7 +13,7 @@ const StateWithFunctionHooks = () => {
 
   let reset = ()=> {
     setCount(0);
-  }
+  } 
 
   return (
     <>
