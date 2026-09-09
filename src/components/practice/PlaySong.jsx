@@ -3,31 +3,49 @@ import parvati from "../../../public/parvati.mp4";
 import mahadev from "../../../public/mahadev.mp4";
 
 const PlaySong = () => {
-  let audioRef = useRef(null);
+  const audioRef = useRef(null);
+  // Declare Hook at the top level of the component
+  const [currentTrack, setCurrentTrack] = useState(null);
 
+  const handleAudio = (trackSrc) => {
+    const audio = audioRef.current;
 
-  let handleAudio = () => {
-   
-    if(audioRef.current.paused){
-      audioRef.current.play()
+    if (currentTrack !== trackSrc) {
+      audio.src = trackSrc;
+      audio.play();
+      setCurrentTrack(trackSrc);
+    } else {
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
     }
-    else{
-      audioRef.current.pause()
-    }
-   
-  } 
+  };
 
   return (
-    <div>
-      <audio ref={audioRef} src={parvati}></audio>
+    <div style={{ display: "flex", gap: "10px" }}>
+
+      <audio ref={audioRef}></audio>
+
+      {/* Wrap function call inside an anonymous arrow function */}
       <img
         width="100"
         height="100"
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5iUPdvba1884QhkKjpk53gk-I3iPof6xDBvQsc0kFyfgAi4SNJgE4mH7&s=10"
-        alt=""
-        onClick={handleAudio}
+        alt="parvati"
+        onClick={() => handleAudio(parvati)}
+        style={{ cursor: "pointer" }}
       />
 
+      <img
+        width="100"
+        height="100"
+        src="https://i.ytimg.com/vi/CBqdVosM4gU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCp_x__SiKjaMhOINCvuoZKyvFf1w"
+        alt="mahadev"
+        onClick={() => handleAudio(mahadev)}
+        style={{ cursor: "pointer" }}
+      />
     </div>
   );
 };
