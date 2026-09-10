@@ -154,7 +154,7 @@ const ControlledForm = () => {
         </div>
 
         <button type="submit" style={styles.button}>
-          Submit Employee Info
+          Submit 
         </button>
       </form>
     </div>
