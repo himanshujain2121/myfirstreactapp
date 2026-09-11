@@ -21,6 +21,8 @@ import RefWithFunction from "./components/RefWithFunction";
 import RefWithMusic from "./components/RefWithMusic";
 import ControlledForm from "./components/form/ControlledForm";
 import UnControlledForm from "./components/form/UnControlledForm";
+import NewForm from "./components/form/NewForm";
+import ContolledFormWithDynamic from "./components/form/ContolledFormWithDynamic";
 
 
 
@@ -86,8 +88,12 @@ class App extends React.Component {
         {/* <RefWithMusic></RefWithMusic>  */}
 
         {/* <ControlledForm></ControlledForm> */}
-        
-        <UnControlledForm></UnControlledForm>
+
+        {/* <UnControlledForm></UnControlledForm> */}
+
+        {/* <NewForm></NewForm> */}
+
+        <ContolledFormWithDynamic></ContolledFormWithDynamic>
       </>
     );
   }
