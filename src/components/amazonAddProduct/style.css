@@ -1,0 +1,122 @@
+.app-wrapper {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #000000;
+  min-height: 100vh;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.left-section {
+  flex: 1;
+  border: 2px solid #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-section {
+  flex: 1;
+  border: 2px solid #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.form-card {
+  border: 2px solid #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  width: 100%;
+  maxWidth: 320px;
+}
+
+.heading {
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  font-family: serif;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 14px;
+}
+
+.input {
+  padding: 10px 14px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #00008b;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product-card {
+  border: 2px solid #ffffff;
+  border-radius: 16px;
+  padding: 15px 20px;
+}
+
+.text {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.edit-btn {
+  flex: 1;
+  padding: 8px;
+  background-color: #008000;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  flex: 1;
+  padding: 8px;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

@@ -32,7 +32,7 @@ const PlaySong = () => {
       <img
         width="100"
         height="100"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5iUPdvba1884QhkKjpk53gk-I3iPof6xDBvQsc0kFyfgAi4SNJgE4mH7&s=10"
+        src=""
         alt="parvati"
         onClick={() => handleAudio(parvati)}
         style={{ cursor: "pointer" }}
@@ -41,7 +41,7 @@ const PlaySong = () => {
       <img
         width="100"
         height="100"
-        src="https://i.ytimg.com/vi/CBqdVosM4gU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCp_x__SiKjaMhOINCvuoZKyvFf1w"
+        src=""
         alt="mahadev"
         onClick={() => handleAudio(mahadev)}
         style={{ cursor: "pointer" }}

@@ -46,7 +46,7 @@ export default class RefWithClass extends Component {
         <audio src="../../public/the_mountain.mp3" ref= {this.songRef}></audio>
         <button onClick={this.handleSong}>{this.state.song?"pause":"play"}</button>
         <img className={styles.songImage}
-        src="https://img.magnific.com/free-vector/audio-song-equalizer-background-with-treble-sign-design_1017-51527.jpg?semt=ais_hybrid&w=740&q=80" 
+        src="" 
         alt=""
         onClick={this.handleSong}
         ></img>

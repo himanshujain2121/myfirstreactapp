@@ -23,6 +23,7 @@ import ControlledForm from "./components/form/ControlledForm";
 import UnControlledForm from "./components/form/UnControlledForm";
 import NewForm from "./components/form/NewForm";
 import ContolledFormWithDynamic from "./components/form/ContolledFormWithDynamic";
+import Container from "./components/amazonAddProduct/Container";
 
 
 
@@ -93,7 +94,9 @@ class App extends React.Component {
 
         {/* <NewForm></NewForm> */}
 
-        <ContolledFormWithDynamic></ContolledFormWithDynamic>
+        {/* <ContolledFormWithDynamic></ContolledFormWithDynamic> */}
+
+        <Container></Container>
       </>
     );
   }
