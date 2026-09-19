@@ -24,6 +24,9 @@ import UnControlledForm from "./components/form/UnControlledForm";
 import NewForm from "./components/form/NewForm";
 import ContolledFormWithDynamic from "./components/form/ContolledFormWithDynamic";
 import Container from "./components/amazonAddProduct/Container";
+import Parent1 from "./components/context/Parent1";
+import Parent2 from "./components/context/Parent2";
+import AddProductContainer from "./components/flipkarcart/AddProductContainer";
 
 
 
@@ -96,7 +99,11 @@ class App extends React.Component {
 
         {/* <ContolledFormWithDynamic></ContolledFormWithDynamic> */}
 
-        <Container></Container>
+        {/* <Container></Container> */}
+        {/* <Parent1></Parent1>
+        <Parent2></Parent2> */}
+
+        <AddProductContainer></AddProductContainer>
       </>
     );
   }

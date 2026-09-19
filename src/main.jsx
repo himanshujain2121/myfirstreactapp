@@ -75,5 +75,6 @@
 import React from 'react'
 import ReactDom from "react-dom/client"
 import App from './App'
+import MessageProvider from './components/context/MessageContext'
 
-ReactDom.createRoot(document.getElementById("root")).render(<App></App>)
+ReactDom.createRoot(document.getElementById("root")).render(<MessageProvider> <App /> </MessageProvider>)
