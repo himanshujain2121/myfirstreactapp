@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const DisplayProduct = ({products, onDeleteProduct}) => {
+const DisplayProduct = ({products, onDeleteProduct, onEditClick}) => {
   
 
   return (
@@ -13,7 +13,7 @@ const DisplayProduct = ({products, onDeleteProduct}) => {
           <div key={item.id} style={{ border: '1px solid #ccc', margin: '10px 0', padding: '10px' }}>
             <p><strong>Name:</strong> {item.name}</p>
             <p><strong>Price:</strong> ${item.price}</p>
-            <button>Edit</button>
+            <button onClick={() => onEditClick(item)}>Edit</button>
             <button onClick={()=>{onDeleteProduct(item)}}>Delete</button>
           </div>
         ))
