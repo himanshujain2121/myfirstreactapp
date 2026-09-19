@@ -27,6 +27,7 @@ import Container from "./components/amazonAddProduct/Container";
 import Parent1 from "./components/context/Parent1";
 import Parent2 from "./components/context/Parent2";
 import AddProductContainer from "./components/flipkarcart/AddProductContainer";
+import CartMain from "./components/context/cart/CartMain";
 
 
 
@@ -103,7 +104,8 @@ class App extends React.Component {
         {/* <Parent1></Parent1>
         <Parent2></Parent2> */}
 
-        <AddProductContainer></AddProductContainer>
+        {/* <AddProductContainer></AddProductContainer> */}
+        <CartMain></CartMain>
       </>
     );
   }
