@@ -28,6 +28,8 @@ import Parent1 from "./components/context/Parent1";
 import Parent2 from "./components/context/Parent2";
 import AddProductContainer from "./components/flipkarcart/AddProductContainer";
 import CartMain from "./components/context/cart/CartMain";
+import Student from "./components/lifecycle/Student";
+import Parent from "./components/lifecycle/Parent";
 
 
 
@@ -105,7 +107,9 @@ class App extends React.Component {
         <Parent2></Parent2> */}
 
         {/* <AddProductContainer></AddProductContainer> */}
-        <CartMain></CartMain>
+        {/* <CartMain></CartMain> */}
+
+        <Parent></Parent>
       </>
     );
   }
