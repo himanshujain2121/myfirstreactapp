@@ -30,6 +30,8 @@ import AddProductContainer from "./components/flipkarcart/AddProductContainer";
 import CartMain from "./components/context/cart/CartMain";
 import Student from "./components/lifecycle/Student";
 import Parent from "./components/lifecycle/Parent";
+import FunctionBasedHooks from "./components/lifecycle/FunctionBasedHooks";
+import HRDashboard from "./components/lifecycle/HRDashboard";
 
 
 
@@ -109,7 +111,9 @@ class App extends React.Component {
         {/* <AddProductContainer></AddProductContainer> */}
         {/* <CartMain></CartMain> */}
 
-        <Parent></Parent>
+        {/* <Parent></Parent> */}
+        <FunctionBasedHooks></FunctionBasedHooks>
+        {/* <HRDashboard></HRDashboard> */}
       </>
     );
   }
