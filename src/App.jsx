@@ -32,6 +32,8 @@ import Student from "./components/lifecycle/Student";
 import Parent from "./components/lifecycle/Parent";
 import FunctionBasedHooks from "./components/lifecycle/FunctionBasedHooks";
 import HRDashboard from "./components/lifecycle/HRDashboard";
+import NavbarRouting from "./components/routing/NavbarRouting";
+import { Outlet } from "react-router-dom";
 
 
 
@@ -112,8 +114,11 @@ class App extends React.Component {
         {/* <CartMain></CartMain> */}
 
         {/* <Parent></Parent> */}
-        <FunctionBasedHooks></FunctionBasedHooks>
+        {/* <FunctionBasedHooks></FunctionBasedHooks> */}
         {/* <HRDashboard></HRDashboard> */}
+
+        <NavbarRouting></NavbarRouting>
+        <Outlet />
       </>
     );
   }

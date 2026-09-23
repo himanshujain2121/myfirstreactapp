@@ -76,5 +76,13 @@ import React from 'react'
 import ReactDom from "react-dom/client"
 import App from './App'
 import MessageProvider from './components/context/MessageContext'
+import { RouterProvider } from 'react-router-dom'
+import { RouteData } from './components/routing/RouteData'
 
-ReactDom.createRoot(document.getElementById("root")).render(<MessageProvider> <App /> </MessageProvider>)
+ReactDom.createRoot(document.getElementById("root")).render(
+    <React.StrictMode>
+      <MessageProvider>
+        <RouterProvider router={RouteData} />
+      </MessageProvider>
+    </React.StrictMode>
+  )
